@@ -1,0 +1,68 @@
+table {
+    -fs-table-paginate: paginate;
+    border-collapse: collapse;
+      font-size: 12px;
+       padding: 8px;
+       border: none;
+
+
+}
+
+th,tbody td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+thead{
+   background-color: #333;
+     color: white;
+}
+
+
+tr.noborder{
+  border: 1px solid black;
+  text-align: center;
+  font-size: 25;
+}
+
+tr.row-highlight {
+background-color: #CCE7E7;
+}
+
+
+td.fitwidth {
+    white-space: nowrap;
+}
+
+td.footer{
+  border: none;
+  font-size: 8;
+}
+
+body {
+  font-family: sans-serif;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+@page{ size:auto; margin:auto;}
+
+
+@media print {
+    footer {
+    position: fixed;
+    bottom: 0;
+    border: none;
+  }
+   thead {display: table-header-group;} 
+   tfoot {display: table-footer-group;}
+   tr{ page-break-inside: avoid;}
+   button {display: none;}
+   
+}
+
